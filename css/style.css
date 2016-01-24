@@ -1,0 +1,170 @@
+.center {
+  margin: auto;
+} 
+
+.face {
+  background-color: green;
+  width: 200px;
+  height: 250px;
+  border-radius: 45%;
+}
+
+.eyes {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 10%;
+  transform: translateY(-30%);
+}
+
+/* Left Eye */
+.eye:first-child {
+  background-color: black;
+  width: inherit;
+  height: inherit;
+  border-radius: 35%;
+  position: absolute;
+  right: 200%;
+}
+
+/* Right Eye */
+.eye:nth-child(2) {
+  background-color: black;
+  width: inherit;
+  height: inherit;
+  border-radius: 35%;
+  position: absolute;
+  left: 200%;
+}
+
+/* Pupil and Eye Color */
+.eye:before {
+  content: "";
+  display: block;
+  background-color: white;
+  border: 3px solid blue;
+  width: 10px;
+  height: 6px;
+  border-radius: 35%;
+  position: absolute;
+  bottom: 3px;
+  right: 3px;
+}
+
+/* Eyebrow */
+.eye:after{
+  content: "";
+  display: block;
+  background-color: black;
+  width: 35px;
+  height: 6px;
+  border-top-left-radius: 100%;
+  position: absolute;
+  bottom: 30px;
+  right: 1px;
+}
+
+.nose {
+  background-color: black;
+  width: 25px;
+  height: 50px;
+  position: relative;
+  top: 10%;
+  transform: translateY(-30%);
+  border-radius: 65%;
+}
+
+.nose:before {
+  content: "";
+  display: block;
+  background-color: white;
+  border: 7px solid black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 100%;
+  right: 50%;
+  top: 50%;
+}
+
+.nose:after {
+  content: "";
+  display: block;
+  background-color: white;
+  border: 7px solid black;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+}
+
+.mouth {
+  overflow: hidden;
+  background-color: black;
+  width: 80px;
+  height: 50px;
+  position: relative;
+  top: 17%;
+  transform: translateY(-30%);
+  border-bottom-left-radius: 65%;
+  border-bottom-right-radius: 65%;
+}
+
+.mouth:after {
+  content: "";
+  display: block;
+  background-color:blue;
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  left: 23px;
+  top: 35px;
+  border-bottom-left-radius: 65%;
+  border-bottom-right-radius: 65%;
+  border-top-left-radius: 35%;
+  border-top-right-radius: 35%;
+}
+
+.hair {
+  margin: auto;
+  background-color: black;
+  width: 200px;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+  top: 0%;
+  transform: translateY(+0%);
+  border-top-left-radius: 200%;
+  border-top-right-radius: 200%;
+}
+
+.hair:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0; 
+	height: 0; 
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid green;
+  left: 75%;
+  bottom: 0%;
+}
+
+.tattoo {
+  position: absolute;
+  top: 22%;
+  left: 54%;
+  width: 0px; 
+  height: 0px; 
+  border-right: 20px solid transparent; 
+  border-top: 20px solid red; 
+  border-left: 20px solid red; 
+  border-bottom: 20px solid red; 
+  border-top-left-radius: 60px; 
+  border-top-right-radius: 60px; 
+  border-bottom-left-radius: 60px; 
+  border-bottom-right-radius: 60px;
+}
